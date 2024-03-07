@@ -1,7 +1,7 @@
 import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { Auth, SessionStart } from "./Screens";
+import { Auth, SessionStart, Record } from "./Screens";
 
 const Stack = createNativeStackNavigator();
 
@@ -18,6 +18,8 @@ export default function Navigation() {
       >
         <Stack.Screen name="Home" component={Auth} />
         <Stack.Screen name="SessionStart" component={SessionStart} />
+        <Stack.Screen name="Record" component={Record} />
+
       </Stack.Navigator>
     </NavigationContainer>
   );
