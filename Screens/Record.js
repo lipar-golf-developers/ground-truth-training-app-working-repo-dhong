@@ -16,7 +16,7 @@ export default function Record() {
   const [isRecording, setIsRecording] = useState(false);
   const [video, setVideo] = useState();
 
-
+ 
   useEffect(() =>{
     (async() => {
       const cameraPermission = await Camera.requestCameraPermissionsAsync();
@@ -98,8 +98,11 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   buttonContainer: {
-    backgroundColor: "#fff",
-    alignSelf: "flex-end"
+    backgroundColor: "#151720",
+    position: "absolute",
+    alignSelf: "center",
+    bottom: 50,
+    borderRadius: 10
   },
   video: {
     flex:1,
