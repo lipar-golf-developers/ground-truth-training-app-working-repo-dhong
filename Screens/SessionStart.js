@@ -14,6 +14,7 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from "react-native-responsive-screen";
+import Record from "./Record";
 
 //TODO: Add Global State
 
@@ -38,7 +39,7 @@ const clubOptions = [
 export default function SessionStart({ navigation }) {
   const [club, setClub] = useState("driver");
 
-  const startSessionHandler = () => {};
+  const startSessionHandler = () => {navigation.navigate("Record")};
   return (
     <Container>
       <Logo />
